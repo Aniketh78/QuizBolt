@@ -81,7 +81,7 @@ function updateHTML(){
         index += 1;
         if(index===quiz_length){
                 quizShow.innerHTML=`<p class="final-score">Highscore: ${set_hs(score)}</p><p class="final-score">You Scored ${score} out of ${quiz_length}</p>
-            <button onclick="window.location.href='homepage.html'"class="Restart">Home</button>`; 
+            <button onclick="window.location.href='index.html'"class="Restart">Home</button>`; 
             quizShow.classList.add('alig');
             updateProgress();
         }

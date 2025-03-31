@@ -95,7 +95,7 @@ subBtn.addEventListener('click',()=>{
         quiz_names.push(quiz_name_fr.value);
         localStorage.setItem('custom_names',JSON.stringify(quiz_names));
         localStorage.setItem(`${quiz_name_fr.value}`,JSON.stringify(ques_ans));
-        window.location.href="homepage.html";
+        window.location.href="index.html";
         const names = JSON.parse(localStorage.getItem('scores'));
         names.push({
             mode:quiz_name_fr.value,
@@ -107,5 +107,5 @@ subBtn.addEventListener('click',()=>{
 });
 
 document.querySelector('.back').addEventListener('click',()=>{
-    window.location.href="homepage.html";
+    window.location.href="index.html";
 })
