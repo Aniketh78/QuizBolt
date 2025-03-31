@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Walter+Turncoat&display=swap');
+*{
+    padding:0;
+    border: 0;
+    margin: 0;
+    font-family: 'poppins';
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body,.container{
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    background-image: linear-gradient(177deg, rgba(31,31,31,1) 0%, rgba(0,0,0,1) 100%);
+}
+.cus{
+    color: white;
+    font-size: 50px;
+    font-family: 'Walter Turncoat', cursive;
+    margin-top: 40px;
+}
+.container{
+    padding: 50px;
+    flex-direction: row;
+    align-items: start;
+    position: relative;
+    column-gap: 25px;
+}
+
+.left-section{
+    width: 355px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.619);
+    backdrop-filter: blur(20px);
+    row-gap: 5px;
+    padding:20px 20px;
+    border-radius: 12px;
+    box-shadow: inset -10px 10px 100px #ffffff2e,-4px 4px 0 white;
+    border:3px solid #ffffff99;
+}
+
+.left-section > input{
+    padding:5px 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    border:2px solid black;
+}
+ul{
+    margin-top: 20px;
+    border-top:2px solid whitesmoke;
+    padding:20px 5px 0px 10px;
+}
+ul> li{
+    color: whitesmoke;
+    list-style:inside;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-style: italic;
+}
+.left-section>button{
+    cursor: pointer;
+    font-size: 14px;
+    padding: 7.5px 15px;
+    text-align: start;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+.left-section>button:hover{
+    box-shadow: 0px 3px 0 #000;
+    transform:translate(0px,-3px);
+}
+.left-section>button:active{
+    transform: translate(0px,0px);
+    box-shadow: none;
+}
+.warning{
+    color: red;
+    font-size: 14px;
+    margin-top: 4px; 
+}
+.place{
+    width: 100%;
+    row-gap: 5px;
+    align-items: start;
+}
+.options{
+    align-items: center;
+    justify-content: center;
+}

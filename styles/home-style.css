@@ -1,0 +1,200 @@
+*{
+    margin:0;
+    border:0;
+    padding:0;
+    font-family: 'poppins';
+    box-sizing: border-box;
+}
+:root{
+    --score_width:50%;
+}
+html,body{
+    min-height: 100vh;
+    width: 100%;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    --gap: 5em;
+    --line: 1px;
+    --color: rgba(255, 255, 255, 0.2);
+  
+    background-image: linear-gradient(
+        -90deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      ),
+      linear-gradient(
+        0deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      );
+    background-size: var(--gap) var(--gap);
+    animation:animate-bg 20S linear infinite forwards;
+}
+@keyframes animate-bg {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0 0;
+    }
+    
+}   
+
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    width:500px;
+    border-radius: 8px;
+    row-gap: 10px;
+    padding-bottom: 20px;
+    z-index:100;
+}
+.title{
+    font-family: 'Shrikhand';
+    font-weight: bold;
+    font-size: 100px;
+    color: white;
+    
+}
+.title >p{
+    padding-right: 10px;
+    display: inline;
+    font-family: 'shrikhand';
+    background-size: 200%;
+    background-image: linear-gradient(120deg,gold,yellow,goldenrod,yellow,gold);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-title 2.5s linear infinite;
+
+}
+
+
+@keyframes animate-title {
+    from{
+        background-position: 0% center;
+    }
+    to{
+        background-position: -200% center;
+    }
+}
+.lab{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px;
+    color: whitesmoke;
+}
+.gamemode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#name{
+    font-size: 15px;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(20px);
+    border: 2px solid #8f8f8f8e;
+}
+#name:focus{
+    outline: none;
+}
+#name option{
+    color: #000000;
+}
+.opt-css{
+    background-color: whitesmoke;
+    outline: none;
+    cursor: pointer;
+}
+.play{
+    padding:7px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-style: italic;
+    color: whitesmoke;
+    background-color: orange;
+    cursor: pointer;
+    box-shadow:  rgba(255, 255, 255, 0.174) 0px 5px 15px;
+    border:1px solid ghostwhite;
+    transition: all 0.3s linear;
+}
+.play:hover{
+    background-color: whitesmoke;
+    color:orange;
+    transform: scale(1.05);
+    border:1px solid orange;
+    transform: skew(5deg);
+}
+
+.play:active{
+    transform: scale(1);
+}
+
+.score-label{
+    color: whitesmoke;
+    font-size: 17px;
+    transition: all 0.3s;
+}
+
+.stars{
+    background-image: linear-gradient(90deg,goldenrod,yellow,gold var(--score_width),rgba(255, 255, 255, 0.156)var(--score_width)+1%);
+    width: 100px;
+    height: 30px;
+    mask-image: url('../images/3-stars.png') ;
+    mask-size: 100px;
+    mask-repeat:no-repeat;
+    mask-position: center;
+    transition: all 0.3s;
+}
+.score{
+    padding:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    transition:  all 0.3s;
+}
+.own_quiz{
+    position: absolute;
+    bottom:2%;
+    right:2%;
+    padding:7px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-style: italic;
+    color: whitesmoke;
+    background-color:dodgerblue;
+    cursor: pointer;
+    box-shadow:  rgba(255, 255, 255, 0.174) 0px 5px 15px;
+    border:1px solid ghostwhite;
+    transition: all 0.3s linear;
+
+}
+.own_quiz:hover{
+    background-color: whitesmoke;
+    color:dodgerblue;
+    transform: scale(1.05);
+    border:1px solid dodgerblue;
+    transform: skew(10deg);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles/home-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="title">Quiz<p>Bolt</p></div>
+            <div class="gamemode">
+        6        <label class="lab" for="game">Select Game Mode:</label>
+                <select name="game" id="name">
+                    <option class="opt-css" value="easy">Easy</option>
+                    <option class="opt-css" value="medium">Medium</option>
+                    <option class="opt-css" value="hard">Hard</option>
+                    <option class="opt-css" value="rapid">Rapid Fire</option>
+                </select>
+            </div>
+            <div class="score">
+                <div class="score-label">All time best:</div>
+                <div class="stars"></div>
+            </div>
+            
+            <button class="play">START</button>
+        </div>
+        <button class="own_quiz">Create your own Quiz!</button>
+    </div>
+    <script src="./scripts/home.js"></script>
+</body>
+</html>
