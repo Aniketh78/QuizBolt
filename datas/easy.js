@@ -1,29 +1,30 @@
 export const quiz = [
     {
-        question: "Biggest mammal in the entire world?",
+        question: "What is the largest mammal in the world?",
         answers: [
+            { a: "Blue Whale", crct: true },
             { a: "Elephant", crct: false },
-            { a: "Whale", crct: true },
-            { a: "Shark", crct: false },
-            { a: "SharkBob", crct: false }
+            { a: "Giraffe", crct: false },
+            { a: "Hippopotamus", crct: false }
+        ]
+        
+    },
+    {
+        question: "What is the smallest continent?",
+        answers: [
+            { a: "Australia", crct: true },
+            { a: "Antarctica", crct: false },
+            { a: "Europe", crct: false },
+            { a: "South America", crct: false }
         ]
     },
     {
-        question: "Cutest mammal in the entire world?",
+        question: "What is the freezing point of water in Celsius?",
         answers: [
-            { a: "Dogs", crct: false },
-            { a: "Cats", crct: true },
-            { a: "Zebra", crct: false },
-            { a: "Orangutan", crct: false }
-        ]
-    },
-    {
-        question: "Best Ice Cream Flavor?",
-        answers: [
-            { a: "Chocolate", crct: false },
-            { a: "Vanilla", crct: true },
-            { a: "Butterscotch", crct: false },
-            { a: "Strawberry", crct: false }
+            { a: "0°C", crct: true },
+            { a: "100°C", crct: false },
+            { a: "-32°F", crct: false },
+            { a: "32°F", crct: false }
         ]
     },
     {
